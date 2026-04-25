@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --foreground: #111827;
+  --background: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ---- Print styles ---- */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #chart-print-inner,
+  #chart-print-inner * {
+    visibility: visible;
+  }
+  #chart-print-inner {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+  }
+}
+
+@page {
+  margin: 0;
+  size: auto;
+}
+
+/* Chart cell hover */
+.chart-cell:hover {
+  transform: scale(1.05);
+  transition: transform 0.15s ease;
+}
+
+/* Smooth animations */
+.animate-fade {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
