@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AdUnit from '@/components/AdUnit'
 
 export const metadata: Metadata = {
   title: 'Weekly Chore Chart Template for Kids — Free Printable PDF',
@@ -213,6 +214,9 @@ export default function WeeklyChoreChartTemplatePage() {
             </Link>
           </div>
         </section>
+
+        {/* Ad before CTA */}
+        <AdUnit slot={process.env.NEXT_PUBLIC_AD_SLOT_CONTENT} format="horizontal" className="my-6" />
 
         {/* CTA */}
         <div className="text-center">

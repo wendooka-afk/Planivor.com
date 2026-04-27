@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import RewardChartGenerator from '@/components/RewardChartGenerator'
+import AdUnit from '@/components/AdUnit'
 
 export const metadata: Metadata = {
   title: 'Free Printable Star Reward Chart Generator for Kids',
@@ -27,6 +28,11 @@ export default function RewardChartGeneratorPage() {
             Pick positive behaviours, set a weekly reward goal, choose a theme — and download a beautiful star chart your child will love. No login required.
           </p>
         </div>
+      </div>
+
+      {/* Ad — between header and generator */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <AdUnit slot={process.env.NEXT_PUBLIC_AD_SLOT_CONTENT} format="horizontal" className="mt-4 mb-2" />
       </div>
 
       <RewardChartGenerator />

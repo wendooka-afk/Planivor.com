@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ChoreChartGenerator from '@/components/ChoreChartGenerator'
+import AdUnit from '@/components/AdUnit'
 
 export const metadata: Metadata = {
   title: 'Free Printable Chore Chart Generator for Kids',
@@ -21,6 +22,11 @@ export default function ChoreChartGeneratorPage() {
             Customize your child&apos;s weekly chore chart, preview it live, and download a beautiful PDF in seconds. No login required.
           </p>
         </div>
+      </div>
+
+      {/* Ad — between header and generator */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <AdUnit slot={process.env.NEXT_PUBLIC_AD_SLOT_CONTENT} format="horizontal" className="mt-4 mb-2" />
       </div>
 
       {/* Generator */}
