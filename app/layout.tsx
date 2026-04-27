@@ -45,6 +45,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col bg-gray-50">
+        {/* Ahrefs Analytics */}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="3aqhyUdG0DEF0NCpQRZyRg"
+          strategy="afterInteractive"
+        />
         {/* Google AdSense — always loaded for verification + auto-ads */}
         <Script
           async
