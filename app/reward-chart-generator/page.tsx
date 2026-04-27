@@ -19,16 +19,20 @@ export const metadata: Metadata = {
 export default function RewardChartGeneratorPage() {
   return (
     <>
-      <div className="bg-white border-b border-gray-100 py-8 px-4 print:hidden">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="font-display text-3xl md:text-4xl text-gray-800 mb-2">
-            🌟 Free Star Reward Chart Generator for Kids
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-amber-500 via-orange-400 to-amber-600 text-white py-14 px-4 print:hidden">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-amber-100 font-bold text-sm uppercase tracking-widest mb-3">Free Printable Tool</p>
+          <h1 className="font-display text-4xl md:text-5xl font-normal leading-tight mb-4">
+            🌟 Star Reward Chart Generator for Kids
           </h1>
-          <p className="text-gray-500 text-base max-w-2xl">
-            Pick positive behaviours, set a weekly reward goal, choose a theme — and download a beautiful star chart your child will love. No login required.
+          <p className="text-amber-50 text-lg leading-relaxed max-w-xl mx-auto">
+            Track positive behaviour with a star-based reward chart. Set a weekly reward goal and celebrate
+            your child&apos;s achievements. Download a beautiful PDF in seconds.
           </p>
+          <p className="mt-4 text-amber-200 text-sm">No login · No account · Instant PDF</p>
         </div>
-      </div>
+      </section>
 
       {/* Ad — between header and generator */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">

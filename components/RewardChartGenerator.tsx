@@ -85,7 +85,7 @@ export default function RewardChartGenerator() {
       <div className="flex flex-col lg:flex-row gap-8">
 
         {/* ── Left panel: Form ── */}
-        <aside className="lg:w-96 flex-shrink-0 space-y-6 print:hidden">
+        <aside className="lg:w-[360px] flex-shrink-0 space-y-4 print:hidden">
 
           {/* Child name */}
           <section className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">

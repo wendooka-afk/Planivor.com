@@ -12,17 +12,20 @@ export const metadata: Metadata = {
 export default function ChoreChartGeneratorPage() {
   return (
     <>
-      {/* Page header */}
-      <div className="bg-white border-b border-gray-100 py-8 px-4 print:hidden">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="font-display text-3xl md:text-4xl text-gray-800 mb-2">
-            Free Chore Chart Generator for Kids
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-indigo-600 via-indigo-500 to-purple-600 text-white py-14 px-4 print:hidden">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-indigo-200 font-bold text-sm uppercase tracking-widest mb-3">Free Printable Tool</p>
+          <h1 className="font-display text-4xl md:text-5xl font-normal leading-tight mb-4">
+            📋 Chore Chart Generator for Kids
           </h1>
-          <p className="text-gray-500 text-base max-w-2xl">
-            Customize your child&apos;s weekly chore chart, preview it live, and download a beautiful PDF in seconds. No login required.
+          <p className="text-indigo-100 text-lg leading-relaxed max-w-xl mx-auto">
+            Create a personalized weekly chore chart with age-matched tasks, fun themes, and a reward goal.
+            Preview live and download your print-ready PDF in seconds.
           </p>
+          <p className="mt-4 text-indigo-300 text-sm">No login · No account · Instant PDF</p>
         </div>
-      </div>
+      </section>
 
       {/* Ad — between header and generator */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
