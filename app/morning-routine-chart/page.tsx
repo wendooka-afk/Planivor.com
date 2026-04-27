@@ -72,7 +72,7 @@ export default function MorningRoutineChartPage() {
             Build independent morning habits with a personalized, printable routine chart.
             Pick age-appropriate steps, choose a theme, and download your PDF in seconds.
           </p>
-          <p className="mt-4 text-emerald-200 text-sm">No login · No ads · Instant PDF</p>
+          <p className="mt-4 text-emerald-200 text-sm">No login · No account · Instant PDF</p>
         </div>
       </section>
 

@@ -47,6 +47,8 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs text-gray-600">
           <span>© {new Date().getFullYear()} Planivor. Free for personal and classroom use.</span>
           <span className="hidden sm:inline text-gray-700">·</span>
+          <Link href="/about" className="hover:text-gray-400 transition-colors">About</Link>
+          <span className="hidden sm:inline text-gray-700">·</span>
           <Link href="/privacy" className="hover:text-gray-400 transition-colors">Privacy Policy</Link>
         </div>
       </div>

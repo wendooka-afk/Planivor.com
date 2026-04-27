@@ -144,7 +144,7 @@ export default function HomePage() {
               🌟 Reward Chart
             </Link>
           </div>
-          <p className="mt-4 text-indigo-300 text-sm">No login · No ads · No watermarks · Instant PDF</p>
+          <p className="mt-4 text-indigo-300 text-sm">No login · No account · No watermarks · Instant PDF</p>
         </div>
       </section>
 

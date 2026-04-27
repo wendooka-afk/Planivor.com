@@ -72,7 +72,7 @@ export default function EveningRoutineChartPage() {
             Make bedtime easier with a calming, visual evening routine. Pick age-appropriate steps,
             choose a theme, and print your chart in seconds — free, no login needed.
           </p>
-          <p className="mt-4 text-violet-300 text-sm">No login · No ads · Instant PDF</p>
+          <p className="mt-4 text-violet-300 text-sm">No login · No account · Instant PDF</p>
         </div>
       </section>
 

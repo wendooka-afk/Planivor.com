@@ -27,7 +27,7 @@ const themes = [
 const faqs = [
   {
     q: 'Is this chore chart really free?',
-    a: 'Yes, completely free. No ads, no login, no watermarks. Just open the generator and download your chart.',
+    a: 'Yes, completely free. No login, no account, no watermarks. Just open the generator and download your chart.',
   },
   {
     q: 'What format does the download come in?',
