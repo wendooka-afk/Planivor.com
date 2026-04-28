@@ -7,6 +7,7 @@ const links = [
   { href: '/reward-chart-generator', label: 'Reward Chart' },
   { href: '/morning-routine-chart', label: '☀️ Morning Routine' },
   { href: '/evening-routine-chart', label: '🌙 Evening Routine' },
+  { href: '/blog', label: '📝 Blog' },
 ]
 
 export default function Nav() {

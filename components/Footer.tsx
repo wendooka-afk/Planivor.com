@@ -10,18 +10,26 @@ const tools = [
   { href: '/weekly-chore-chart-template', label: 'Weekly Chore Chart Template' },
 ]
 
+const blogLinks = [
+  { href: '/blog', label: 'All Articles' },
+  { href: '/blog/how-to-get-kids-to-do-chores', label: 'How to Get Kids to Do Chores' },
+  { href: '/blog/do-reward-charts-work', label: 'Do Reward Charts Work?' },
+  { href: '/blog/morning-routine-tips-for-kids', label: 'Morning Routine Tips' },
+  { href: '/blog/building-good-habits-in-children', label: 'Building Good Habits' },
+]
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-400 py-12 mt-16 print:hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 font-display text-xl text-white mb-3">
               <span>📋</span>
               <span>Planivor</span>
             </Link>
             <p className="text-sm leading-relaxed">
-              Free printable tools for families — chore charts, reward charts, morning & evening routines. No login, no fuss.
+              Free printable tools for families — chore charts, reward charts, morning &amp; evening routines. No login, no fuss.
             </p>
           </div>
           <div>
@@ -31,6 +39,18 @@ export default function Footer() {
                 <li key={t.href}>
                   <Link href={t.href} className="text-sm hover:text-white transition-colors">
                     {t.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-white font-bold mb-3 text-sm uppercase tracking-wide">Blog</h3>
+            <ul className="space-y-2">
+              {blogLinks.map(b => (
+                <li key={b.href}>
+                  <Link href={b.href} className="text-sm hover:text-white transition-colors">
+                    {b.label}
                   </Link>
                 </li>
               ))}
